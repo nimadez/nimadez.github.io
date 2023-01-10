@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="refresh" content="8; url=https://nimadez.github.io/">
+    <title>404 Error</title>
+    <style>
+        body { background: #1C2128; color: steelblue; font-family: monospace; font-size: 14px; margin: 20px; cursor: default; }
+        a, a:visited { color: #5eb6ff; text-decoration: none; }
+        a:hover { color: turquoise; }
+        .timer { color: palevioletred; }
+        .blinker { animation: 1s blinks infinite; }
+        @keyframes blinks { 0% { opacity: 0 } 100% { opacity: 1 } }
+    </style>
+</head>
+<body>
+    404 ERROR | PAGE NOT FOUND!<br>
+    ---------------------------<br>
+    Redirecting to<br>
+    <a href="https://nimadez.github.io/">https://nimadez.github.io/</a><br>
+    in <span class="timer">8</span> seconds.<br>
+    ---------------------------<br>
+    [root@localhost ~]# <span class="blinker">█</span>
+
+    <script>
+        const timer = document.getElementsByClassName('timer')[0];
+        let t = 8;
+        setInterval(()=>{
+            --t;
+            timer.innerHTML = t;
+        }, 1000);
+    </script>
+</body>
+</html>
